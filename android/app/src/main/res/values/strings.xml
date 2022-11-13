@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ionic-app-base</string>
+    <string name="title_activity_main">ionic-app-base</string>
+    <string name="package_name">io.ionic.starter</string>
+    <string name="custom_url_scheme">io.ionic.starter</string>
+    <string name="asset_statements" translatable="false">
+[{
+  \"include\": \"https://connectid.darkedges.com/.well-known/assetlinks.json\"
+}]
+    </string>
+</resources>
