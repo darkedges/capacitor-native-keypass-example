@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { WebAuthn } from '@darkedges/webauthn';
+import { WebAuthn } from '@darkedges/capacitor-native-passkey';
 import { WebAuthnService } from '../webauthn/services/WebAuthn.service';
 
 @Component({

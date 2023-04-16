@@ -1,19 +1,12 @@
-# capacitor-webauthn-ui
+# capacitor-native-passkey-example
 
-## Pre-Requsisite
-
-```console
-cd webauthn
-git clone https://github.com/darkedges/capacitor-webauthn.git
-cd capacitor-webauthn
-npm run watch
-```
+Example application for using `capacitor-native-passkey`
 
 ## Run
 
 ```console
 cd webauthn
-git clone https://github.com/darkedges/capacitor-webauthn-ui
-cd capacitor-webauthn-ui
+git clone https://github.com/darkedges/capacitor-native-passkey-example
+cd capacitor-native-passkey-example
 ng serve
 ```
