@@ -15,4 +15,4 @@ include ':capacitor-status-bar'
 project(':capacitor-status-bar').projectDir = new File('../node_modules/@capacitor/status-bar/android')
 
 include ':darkedges-webauthn'
-project(':darkedges-webauthn').projectDir = new File('../../capacitor-webauthn/android')
+project(':darkedges-webauthn').projectDir = new File('../node_modules/@darkedges/webauthn/android')
