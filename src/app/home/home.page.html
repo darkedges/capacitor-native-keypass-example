@@ -14,7 +14,9 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button (click)="initRegistration()"><ion-icon name="id-card-outline"></ion-icon>register</ion-button>
+    <ion-button color="success" (click)="initAuthentication()"><ion-icon
+        name="log-in-outline"></ion-icon>authenticate</ion-button>
   </div>
+
 </ion-content>

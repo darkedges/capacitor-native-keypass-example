@@ -12,16 +12,23 @@ export class HomePage {
   constructor(
     private webAuthnService: WebAuthnService
   ) {
-    this.init();
   }
 
-  async init() {
-    // let v1 = await WebAuthn.isWebAuthnAvailable();
-    // let v2 = await WebAuthn.isWebAuthnAutoFillAvailable();
-    // console.log({ v1, v2 })
+  async initAuthentication() {
+    this.webAuthnService.generateAuthenticationOptions().subscribe(
+      publicKeyCredentialRequestOptionsJSON => {
+        WebAuthn.startAuthentication(publicKeyCredentialRequestOptionsJSON).then(
+          data => {
+            alert(JSON.stringify(data, null, 2));
+          }
+        )
+      }
+    )
+  }
+
+  async initRegistration() {
     this.webAuthnService.generateRegistrationOptions().subscribe(
       publicKeyCredentialCreationOptionsJSON => {
-        console.log(JSON.stringify(publicKeyCredentialCreationOptionsJSON, null, 2));
         WebAuthn.startRegistration(publicKeyCredentialCreationOptionsJSON).then(
           data => {
             alert(JSON.stringify(data, null, 2));
